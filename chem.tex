@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{chemfig}
+\usepackage{chemformula}
+\usepackage{geometry}
+
+\geometry{total={200mm,270mm}}
+\begin{document}\begin{center}
+	\begin{tabular}{ccc}
+		\hline \\ Ethane & Ethene & Ethyne \\ & & \\
+		\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-H} &
+		\chemfig{C(-[3]H)(-[5]H)=C(-[1]H)(-[7]H)} &
+		\chemfig{C(-[4]H)~C(-[8]H)} \\ & & \\
+		\chemfig[angle increment=30]{-} &
+		\chemfig[angle increment=30]{=} &
+		\chemfig[angle increment=30]{~} \\ & & \\
+		\ch{CH3CH3} (\ch{C2H6}) &
+		\ch{CH2=CH2} (\ch{C2H4}) &
+		\ch{CH+CH} (\ch{C2H2})\\ & & \\
+		\hline \\ 1-Chloroethane & 1,2-Dichloroethane & Combustion \\ & & \\
+		\chemfig{C(-[2]H)(-[4]Cl)(-[6]H)-C(-[2]H)(-[6]H)-H} &
+		\chemfig{C(-[2]H)(-[4]H)(-[6]Cl)-C(-[2]H)(-[6]Cl)-H} &
+		\ch{H2O} + \ch{CO2} \\ & & \\
+		\chemfig[angle increment=30]{Cl-[1]-[-1]} &
+		\chemfig[angle increment=30]{Cl-[1]-[-1](-[1]Cl)} &
+		\ch{H2O} + \ch{CO2} \\ & & \\
+		\ch{CH3CH3Cl} (\ch{C2H6Cl}) &
+		\ch{ClCH2=CH2Cl} (\ch{C2H4Cl2}) &
+		\ch{H2O} + \ch{CO2} \\ & & \\
+		\hline \\ Ethanamine & Ethanamide & Ethanol \\ & & \\
+		\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-N(-[1]H)(-[7]H)} &
+		\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(=[2]O)-N(-[1]H)(-[7]H)} &
+		\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-OH} \\ & & \\
+		\chemfig[angle increment=30]{-[1]-[-1]NH_2} &
+		\chemfig[angle increment=30]{-[1](=[3]O)-[-1]NH_2} &
+		\chemfig[angle increment=30]{-[1]-[-1]OH} \\ & & \\
+		\ch{CH3CH2NH2} (\ch{C2H7N}) &
+		\ch{CH3(C=O)NH2} (\ch{C2H5NO}) &
+		\ch{CH3CH2OH} (\ch{C2H6O}) \\ & & \\
+		\hline
+	\end{tabular}
+	\begin{tabular}{cc}
+		\\ Ethanal & Ethanoic Acid \\ & \\
+		\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(=[2]O)-H} &
+		\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(=[2]O)-OH} \\ & \\
+		\chemfig[angle increment=30]{-[1](=[3]O)-[-1]H} &
+		\chemfig[angle increment=30]{-[1](=[3]O)-[-1]OH} \\ & \\
+		\ch{CH3COH} (\ch{C2H4O}) &
+		\ch{CH3COOH} (\ch{C2H4O2}) \\ & \\
+		\hline
+	\end{tabular}
+\end{center}\end{document}
